@@ -1,0 +1,7 @@
+reflex==0.6.8
+fastapi
+uvicorn
+PyMuPDF
+joblib
+torch
+transformers
