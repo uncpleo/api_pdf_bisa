@@ -2,6 +2,7 @@
 Esta API permite extraer y clasificar información de archivos PDF, como códigos de proyecto, disciplinas, clasificaciones de entregables y más. Utiliza modelos de machine learning y técnicas de procesamiento de texto e imágenes para realizar estas tareas.
 
 ## Estructura del Proyecto
+```bash
 ├── __pycache__
 │  └── rxconfig.cpython-39.pyc
 ├── .web
@@ -19,6 +20,7 @@ Esta API permite extraer y clasificar información de archivos PDF, como código
 ├── .gitignore
 ├── requeriments.txt        # Dependencias del proyecto
 └── rxconfig.py
+```
 
 ## Requisitos Previos
 Python 3.9 o superior: Asegúrate de tener Python instalado. Puedes verificarlo con:
@@ -26,15 +28,15 @@ Python 3.9 o superior: Asegúrate de tener Python instalado. Puedes verificarlo 
 
 ## Instalación de Dependencias:
 Instala las dependencias necesarias usando el archivo requirements.txt:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 ## Instrucciones para Ejecutar la API
-
+```bash
 cd api_extraccion
 python api_extraccion.py
-
+```
 
 La API estará disponible en http://127.0.0.1:8000. Puedes probarla usando:
 Endpoint raíz: GET / (Mensaje de bienvenida).
@@ -42,7 +44,7 @@ Procesar PDF: POST /procesar-pdf/ (Sube un archivo PDF para extraer información
 
 ## Dependencias (requirements.txt)
 Asegúrate de que tu archivo requirements.txt contenga las siguientes dependencias:
-
+```bash
 fastapi==0.95.2
 uvicorn==0.22.0
 torch==2.0.1
@@ -54,10 +56,12 @@ easyocr==1.6.2
 numpy==1.24.3
 scikit-learn==1.2.2
 python-multipart==0.0.6
+```
 
 ## Para generar o actualizar el archivo requirements.txt, puedes usar:
-
+```bash
 pip freeze > requirements.txt
+```
 
 ## Notas Adicionales
 
